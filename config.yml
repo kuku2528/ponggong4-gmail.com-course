@@ -1,0 +1,16 @@
+title: ponggong4@gmail.com
+description: Kuku
+template:
+  repo: ponggong4@gmail.com-template
+  name: ponggong4@gmail.com
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
